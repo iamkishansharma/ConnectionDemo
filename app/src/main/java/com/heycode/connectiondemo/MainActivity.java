@@ -2,6 +2,7 @@ package com.heycode.connectiondemo;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +11,8 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -209,6 +212,23 @@ public class MainActivity extends AppCompatActivity {
                 mImageView.setImageBitmap(mBitmap);
             }
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch ((item.getItemId())){
+            case R.id.gotoMusic:
+                startActivity(new Intent(MainActivity.this, MusicActivity.class));
+                break;
+        }
+        return true;
     }
 }
 
