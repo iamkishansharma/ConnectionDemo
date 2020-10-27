@@ -3,5 +3,11 @@
 
     <item
         android:id="@+id/gotoMusic"
-        android:title="Goto Music"/>
+        android:title="Goto Music" />
+    <item
+        android:id="@+id/gotoVideo"
+        android:title="Goto Video" />
+    <item
+        android:id="@+id/gotoWeb"
+        android:title="Goto WebView" />
 </menu>

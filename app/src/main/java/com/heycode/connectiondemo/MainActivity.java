@@ -16,7 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -223,9 +222,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch ((item.getItemId())){
+        switch ((item.getItemId())) {
             case R.id.gotoMusic:
                 startActivity(new Intent(MainActivity.this, MusicActivity.class));
+                break;
+            case R.id.gotoVideo:
+                startActivity(new Intent(MainActivity.this, VideoActivity.class));
+                break;
+            case R.id.gotoWeb:
+                startActivity(new Intent(MainActivity.this, WebActivity.class));
                 break;
         }
         return true;

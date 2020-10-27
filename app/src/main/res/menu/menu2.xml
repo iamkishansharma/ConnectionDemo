@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="B"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_arrow_back"
+        android:id="@+id/bck"/>
+
+    <item
+        android:title="R"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_refresh"
+        android:id="@+id/refresh"/>
+
+    <item
+        android:title="F"
+        android:icon="@drawable/ic_arrow_forward"
+        app:showAsAction="always"
+        android:id="@+id/fwd"/>
+
+
+
+</menu>
